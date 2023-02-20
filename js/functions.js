@@ -53,12 +53,6 @@ function extractingNumbers(inputString) {
     }
 
     return NaN;
-
-    // if (isNaN(extractedNumber)) {
-    //   return NaN;
-    // }
-
-    // return Number(extractedNumber);
   }
 }
 
