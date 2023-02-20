@@ -36,9 +36,8 @@ function extractingNumbers(inputString) {
 
   if (inputString === Number.isInteger(inputString)) {
     return Math.abs(inputString);
-  }
 
-  else {
+  } else {
     for (let i = 0; i <= inputString.length; i++) {
 
       const parsed = parseInt(inputString[i], 10);
@@ -70,3 +69,5 @@ const myPadStart = (string, minLength, pad) => {
     ? string
     : pad.slice(0, actualPad % pad.length) + pad.repeat(actualPad / pad.length) + string;
 };
+
+myPadStart('test', 12, 'qwerty');
