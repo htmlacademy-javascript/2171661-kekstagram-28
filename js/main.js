@@ -1,3 +1,4 @@
 import {getPhotosList} from './data.js';
+import {renderPictures} from './pictures.js';
 
-getPhotosList();
+renderPictures(getPhotosList());
