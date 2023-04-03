@@ -13,19 +13,8 @@ const createPicture = ({url, comments, likes}) => {
 
 const renderPictures = (picturesArray) => {
   const fragment = document.createDocumentFragment();
-  picturesArray.forEach((singlePicture) => {
-    const newPicture = createPicture(singlePicture);
-    fragment.append(newPicture);
-  });
+  picturesArray.map((picture) => fragment.append(createPicture(picture)));
   picturesList.append(fragment);
 };
 
 export {renderPictures};
-
-/* <a href="#" class="picture">
-      <img class="picture__img" src="" width="182" height="182" alt="Случайная фотография">
-      <p class="picture__info">
-        <span class="picture__comments"></span>
-        <span class="picture__likes"></span>
-      </p>
-    </a> */
